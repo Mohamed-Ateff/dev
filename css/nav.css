@@ -69,7 +69,7 @@ a {
 .container {
   /* max-width: 80%; */
   max-width: 1120px;
-  overflow: hidden;
+  /* overflow: hidden; */
   /* background-color: red; */
   margin-inline: 1.5rem;
 }
