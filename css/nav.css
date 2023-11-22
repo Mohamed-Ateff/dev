@@ -204,6 +204,11 @@ a {
   height: 2px;
 }
 
+#no-affect-header-link:hover:before {
+  width: 0px;
+  height: 0px;
+}
+
 /* Show menu */
 .show-menu {
   opacity: 1;
