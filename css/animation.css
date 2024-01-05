@@ -208,10 +208,8 @@
   /* margin-top: 13px;
   font-size: 33px; */
   /* color: #d9d3bc; */
-  animation: fadeIn 0.5s forwards;
-  animation-delay: 2s;
-  color: transparent;
-  -webkit-text-stroke: 1px whitesmoke;
+  color: white;
+  font-weight: bold;
 }
 
 @keyframes fadeIn {
