@@ -492,49 +492,63 @@
 }
 /* Work */
 
-.work {
-  position: relative;
-}
 
-.nav-work {
+.work{
+  width: 100%;
+  background-color: #ffffff08;
+  border-radius: 15px;
+  padding: 55px 45px;
+}
+.work-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 50px;
 }
-
-.wrapper {
-  margin: 0px auto;
-  /* background-color: red; */
-  /* max-width: 1100px; */
+.work-title p{
+  color: rgb(144, 144, 144);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
 }
-.wrapper nav {
+
+.work-title h1{
+  color: white !important;
+  margin-top: 5px;
+}
+
+.change-color{
+  background-image: linear-gradient(45deg, #c6ea8d, #fe90af) !important;
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+}
+
+.see-more-projects{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.see-more-projects a{
+  color: white;
+  font-size: 15px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
-.wrapper .items {
-  /* background-color: cadetblue; */
-  display: flex;
-  max-width: 400px;
-  width: 100%;
-  /* background-color: red; */
-  justify-content: space-between;
-}
-.items span {
-  border: 1px solid hsla(0, 0%, 100%, 0.05);
-  border-radius: 3.125rem;
-  padding: 0.625rem 1.5rem;
-  background-color: hsla(0, 0%, 100%, 0.05);
-  line-height: 1.25rem;
-  color: #fff;
-  cursor: pointer;
-  font-weight: 600;
-}
-.items span:hover {
-  background: hsla(0, 0%, 100%, 0.05);
-}
-.items span.active {
-  background: hsla(0, 0%, 27%, 0.05);
 
-  border: 1px solid hsla(0, 0%, 100%, 0.162);
+.see-more-projects a svg{
+  position: relative;
+  top: 2px;
+  margin-left: 2px;
 }
+
+
+
+
 
 .gallery {
   display: flex;
@@ -542,30 +556,51 @@
   justify-content: space-between;
   margin-top: 10px;
   /* background-color: saddlebrown; */
-}
-.gallery .image {
-  /* background-color: red; */
-  background-color: #ffffff08;
-  width: calc(100% / 2 - 30px);
-  margin-bottom: 70px;
-  padding: 40px 30px;
-  border-radius: 10px;
-  position: relative;
-  border-top: 2px solid;
-  border-image: linear-gradient(45deg, #c6ea8d, #fe90af);
-  border-image-slice: 1; 
-  border-top-right-radius: 0px;
-  border-top-left-radius: 0px;
-}
-.gallery .image img {
-  width: 100%;
-  height: 330px;
-  vertical-align: middle;
-  transition: all 0.3s ease;
   border-radius: 10px;
 }
 
-.des-work {
+
+.gallery .image {
+  width: calc(100% / 2 - 20px);
+  margin-bottom: 50px;
+  position: relative;
+  /* border-top: 2px solid;
+  border-image: linear-gradient(45deg, #c6ea8d, #fe90af);
+  border-image-slice: 1; 
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px; */
+  border-radius: 10px !important; 
+}
+
+.gallery .image:hover .border-rad {
+  
+  border: 2px solid #c6ea8d;
+  /* border-image: linear-gradient(45deg, #c6ea8d, #fe90af);
+  border-image-slice: 1; 
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px; */
+  border-radius: 10px !important; 
+}
+
+#no-margin{
+  margin-bottom: 0px;
+}
+.gallery .image img {
+  width: 100%;
+  height: 400px;
+  vertical-align: middle;
+  transition: all 0.3s ease;
+  border-radius: 6px;
+}
+.border-rad{
+  border: 2px solid transparent;
+  border-radius: 10px !important; 
+  padding:  5px 4px;
+  border-radius: 10px !important;
+  transition: all 0.3s ease;
+}
+
+.des-work { 
   /* background-color: red; */
   /* background-color: darkcyan; */
 }
@@ -580,12 +615,15 @@
 }
 .card-title-work .tag {
   font-size: 10px;
-  font-weight: 600;
+  font-weight: 800;
   padding: 5px 8px;
   border-radius: 50px;
-  background-color: #2f2f2f;
+  background-color: #c6ea8d;
+  /* background-image: linear-gradient(45deg, #c6ea8d, #fe90af) !important; */
+  color: black;
   margin-left: 10px;
   margin-top: 2px;
+  opacity: .8;
 }
 
 .des-work h1 {
@@ -599,7 +637,7 @@
 
 .footer-work {
   /* background-color: blue; */
-  margin-top: 20px;
+  margin-top: 13px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -627,14 +665,15 @@
   height: 30px;
   color: whitesmoke;
   /* margin-left: 10px; */
-  background-color: #2f2f2f;
+  background-color: #282828;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50px;
 }
+
 .go-live-box {
-  background-color: #2f2f2f;
+  background-color: #282828;
   width: 70px;
   height: 25px;
   position: absolute;
