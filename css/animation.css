@@ -173,6 +173,7 @@
 
 .text-animation {
   opacity: 0;
+  color: #c6ea8d;
 }
 
 .text-animation span {
