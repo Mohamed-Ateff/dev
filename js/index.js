@@ -176,5 +176,5 @@ const counterAnimation = (el, initialNum, finalNum) => {
   }
 };
 
-counterAnimation(document.querySelector("#EXPERIENCE"), 0, 5);
-counterAnimation(document.querySelector("#PROJECTS"), 0, 40 );
+counterAnimation(document.querySelector("#EXPERIENCE"), 0, 4);
+counterAnimation(document.querySelector("#PROJECTS"), 0, 35 );
