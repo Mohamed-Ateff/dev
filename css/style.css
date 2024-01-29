@@ -845,8 +845,8 @@
 /* End testimonials */
 
 #Contact {
-  background-image: url(../images/bg-paterns.png);
-  background-size: cover;
+  /* background-image: url(../images/bg-paterns.png);
+  background-size: cover; */
 }
 
 .contact-content {
