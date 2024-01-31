@@ -19,7 +19,7 @@
 
   /*========== Font weight ==========*/
   --font-regular: 400;
-  --font-semi-bold: 600;
+  Download-CV--font-semi-bold: 600;
 
   /*========== z index ==========*/
   --z-tooltip: 10;
@@ -80,6 +80,10 @@ a {
   padding-top: 20px;
 }
 
+.work{
+  margin-top: 30px;
+}
+
 /*=============== HEADER ===============*/
 .header {
   width: 100%;
@@ -122,6 +126,13 @@ a {
   font-weight: initial;
   font-size: 1.25rem;
 }
+.nav__logo img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+  margin-right: 5px;
+  border: 1px solid #c6ea8d;
+}
 
 .nav__toggle {
   position: relative;
@@ -162,31 +173,32 @@ a {
     width: 0;
   }
   .nav__list {
+    margin-top: 15px;
+    text-align: left !important;direction: rtl;
     background-color: var(--black-color);
-    padding-top: 1rem;
   }
 }
 
 .nav__link {
+
   color: var(--white-color);
   /* background-color: var(--black-color); */
   font-weight: var(--font-semi-bold);
   padding: 1.25rem 1.5rem;
   display: flex;
+  /* background-color: red; */
   justify-content: space-between;
   align-items: center;
   transition: 0.3s ease;
   position: relative;
 }
 .nav__link:hover {
-
-  color: #c6ea8d;
 }
 .nav__link::before {
   content: "";
   width: 0%;
   height: 2px;
-  background-color: #c6ea8d;
+  background-color: white;
   position: absolute;
   bottom: 30%;
   left: 50%;
@@ -196,7 +208,7 @@ a {
 }
 .nav__link:hover:before {
   content: "";
-  width: 50%;
+  width: 100%;
   height: 2px;
 }
 

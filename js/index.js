@@ -178,3 +178,24 @@ const counterAnimation = (el, initialNum, finalNum) => {
 
 counterAnimation(document.querySelector("#EXPERIENCE"), 0, 4);
 counterAnimation(document.querySelector("#PROJECTS"), 0, 35 );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
