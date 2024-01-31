@@ -1,3 +1,25 @@
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #191A1D;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #26282c;
+  transition: .3s ease;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #3c3c3c;
+}
+
+
 .title .container {
   display: flex;
   justify-content: center !important;
