@@ -900,10 +900,16 @@
   text-align: left;
   margin-top: 20px;
   background-color: #151618;
-  padding: 30px 30px;
-  border-left: 2px solid gold;
+  padding: 33px 30px;
+  border-radius: 10px;
+  transition: .3s ease;
 }
+.book:hover{
+  background-color: #151618;
+}
+
 .book p {
+  line-height: 20px;
   font-style: italic;
   color: #cfcfcf;
 }
@@ -915,16 +921,6 @@
   cursor: pointer;
   color: white;
   font-size: 20px;
-}
-
-.my-speach {
-  color: #e6e6e6;
-  margin-top: 20px;
-  background-color: #151618;
-  padding: 30px;
-  text-align: left;
-  line-height: 25px;
-  border-radius: 10px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -979,7 +975,6 @@
   background-color: #191A1D;
   border-radius: 10px;
   margin-bottom: 35px;
-  background-image: url(../images/bg-paterns.png);
   display: flex;
   justify-content: space-between;
   align-items: center;
