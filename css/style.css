@@ -858,7 +858,7 @@
   background-color: #191a1d;
   padding: 50px;
   width: 70%;
-  height: 65%;
+  height: fit-content;
   border-radius: 5px;
   z-index: 10000000000 !important;
 }

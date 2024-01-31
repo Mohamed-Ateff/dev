@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/animation.css" />
+    <link rel="stylesheet" href="css/loading.css" />
 
     <link
       rel="stylesheet"
@@ -29,6 +30,24 @@
   </head>
 
   <body>
+
+    <div class="loader-wrapper">
+      <div class="container-for-loading-page">
+
+        <h1>Mohamed A.</h1>
+        <p>loading</p>
+        <div class="container-balls">
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+        </div>
+    </div>
+    </div>
+
     <header class="header">
       <nav class="nav container">
         <div class="nav__data">
@@ -1550,6 +1569,17 @@ Will hire him again for more jobs.</q>
 
 
     </script>
+
+    <script>
+      window.onload = function() {
+  var loader = document.querySelector(".loader-wrapper");
+  loader.style.display = "none";
+  var content = document.querySelector(".page-content");
+  content.style.display = "block";
+};
+
+    </script>
+
 
   </body>
 </html>
