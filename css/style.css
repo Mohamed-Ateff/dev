@@ -596,9 +596,10 @@
   .see-more-projects {
     display: flex;
     justify-content: flex-end;
-    /* background-color: red; */
     align-items: center;
-    width: 100%;
+    width: 40%;
+    margin-left: 60%;
+    /* background-color: red; */
   }
   #no-margin2 {
     margin-bottom: 50px;
@@ -796,12 +797,13 @@
     padding: 15px;
     width: 100%;
     min-height: 100px;
+margin-left: 0px !important;
     margin-right: 0px;
   }
   .All-skills-section {
     width: 100% !important;
     /* background-color: blue; */
-    padding: 30px 50px;
+    padding: 30px 25px;
   }
   .skills {
     /* background-color: red; */
