@@ -61,7 +61,7 @@
   text-align: center;
   line-height: 50px;
   font-size: 26px;
-  color: #ecedf3;
+  color: #f8cc4d;
   left: 0;
   top: 0;
   height: 50px;
@@ -85,7 +85,7 @@
   line-height: 50px;
   font-size: 26px;
   opacity: 0;
-  background: #ecedf3;
+  background: #f8cc4d;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   left: 0;
@@ -108,18 +108,15 @@
 }
 
 .progress-wrap svg.progress-circle path {
-  stroke: #ecedf3;
+  stroke: #f8cc4d;
   stroke-width: 4;
   box-sizing: border-box;
   -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
 }
 
-
-
-@media (max-width: 600px){
-  
-.progress-wrap {
-  display: none !important;
-}
+@media (max-width: 600px) {
+  .progress-wrap {
+    display: none !important;
+  }
 }

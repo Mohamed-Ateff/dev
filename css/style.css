@@ -19,6 +19,11 @@
   background: #3c3c3c;
 }
 
+.decoration_img{
+  position: absolute;
+  top: -10px;
+  left: -70px;
+}
 
 .title .container {
   display: flex;
@@ -70,7 +75,7 @@
   margin-left: 2px;
 }
 .border-title-big {
-  background-image: linear-gradient(45deg, #c6ea8d, #fe90af);
+  background-color: #F8CC4D;
   width: 8px;
   height: 8px;
   border-radius: 50px;
@@ -103,7 +108,7 @@
   font-size: 13px;
 }
 .Hello-hero {
-  color: #c6ea8d;
+  color: #FEC200;
 }
 
 .MyName {
@@ -113,25 +118,11 @@
 .text-hero h1 {
   margin: 2px 0px;
   font-family: "Roboto", sans-serif;
-  font-weight: 900;
+  font-weight: 800;
   font-size: clamp(3.4375rem, 3.25rem + 0.75vw, 4rem);
   position: relative;
-  color: white !important;
+  color: #C4C5C7 !important;
   z-index: 100 !important;
-}
-#Mohamed-Atef-animation {
-  -moz-text-fill-color: transparent;
-  font-size: clamp(3.4375rem, 3.25rem + 0.75vw, 4rem);
-  font-weight: 800;
-  position: absolute;
-  top: -2px;
-  left: 0px;
-  background-image: linear-gradient(45deg, #c6ea8d, #fe90af) !important;
-  background-size: 100%;
-  background-repeat: repeat;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
 }
 
 .text-hero h3 {
@@ -142,15 +133,18 @@
 
 .text-hero a {
 }
+
 .text-hero .My-Projects {
-  color: white;
-  background-color: hsla(0, 0%, 100%, 0.05);
-  padding: 15px 45px;
+  color: black;
+  background-color: #F8CC4D;
+  padding: 13px 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   width: fit-content;
   border-radius: 10px;
+  font-weight: 800;
+  font-size: 18px;
 }
 /* .text-hero .My-Projects:hover svg {
   transform: rotate(0deg);
@@ -165,9 +159,10 @@
 }
 
 .hire-me {
-  color: #252525;
+  border: 2px solid #303236;
+  color: #4c4f56;
+  background-color: transparent;
   font-weight: 600;
-  background-image: linear-gradient(45deg, #c6ea8d, #fe90af) !important;
   background-size: 100%;
   padding: 14px 45px;
   margin-left: 20px;
@@ -175,14 +170,23 @@
   justify-content: center;
   align-items: center;
   border-radius: 10px;
+  transition: 0.3s ease;
 }
 
 .hire-me svg {
   width: 23px;
   height: 23px;
-  fill: #252525;
+  fill: #4c4f56;
   margin-right: 5px;
   transition: 0.3s ease;
+}
+.hire-me:hover{
+  border: 2px solid #1f1f26;
+  background-color:#1f1f26 ;
+  color: white;
+}
+.hire-me:hover  svg {
+  fill: white;
 }
 
 .hero-buttns {
@@ -353,7 +357,8 @@
 
 .work {
   width: 100%;
-  background-color: #ffffff08;
+  background-color: #191B1D;
+  border: 1px solid rgba(255, 255, 255, 0.07);
   border-radius: 15px;
   padding: 55px 45px 45px 45px;
 }
@@ -377,7 +382,7 @@
 }
 
 .change-color {
-  color: #c6ea8d;
+  color: #F8CC4D;
 }
 
 .see-more-projects {
@@ -402,7 +407,7 @@
 .swiper-button-prev::after{
   color: white;
   font-size: 15px !important;
-  background-color: #1F2124;
+  background-color: #161618;
   width: 50px;
   height: 50px; 
   border-radius: 50px;
@@ -430,7 +435,7 @@
 }
 
 .image:hover .border-rad {
-  border: 2px solid #c6ea8d;
+  border: 2px solid #F8CC4D;
   border-radius: 10px !important;
 }
 
@@ -474,7 +479,7 @@
   font-weight: 800;
   padding: 5px 8px;
   border-radius: 50px;
-  background-color: #c6ea8d;
+  background-color: #F8CC4D;
   color: black;
   margin-left: 10px;
   margin-top: 2px;
@@ -577,7 +582,7 @@
 @media (max-width: 600px) {
   .work {
     width: 100%;
-    background-color: #ffffff08;
+    background-color: #191B1D;
     border-radius: 15px;
     padding: 35px 20px;
     margin-bottom: 40px;
@@ -704,7 +709,7 @@
 }
 .skills .container .card-skills {
   margin-bottom: 20px;
-  background: #ffffff08;
+  background: #191B1D;
   border-radius: 16px;
   display: flex;
   justify-content: center;
@@ -828,7 +833,7 @@ margin-left: 0px !important;
 }
 
 .Golden-card {
-  background-image: linear-gradient(45deg, #c6ea8d, #fe90af) !important;
+  background-color: #F8CC4D !important;
   background-size: 100%;
 }
 

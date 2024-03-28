@@ -10,7 +10,7 @@
   --black-color-light: hsla(0, 0%, 100%, 0.03);
   --black-color-lighten: hsla(0, 0%, 100%, 0.03);
   --white-color: hwb(0 100% 0% / 0.953);
-  --body-color: #121316;
+  --body-color: #161618;
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -19,7 +19,7 @@
 
   /*========== Font weight ==========*/
   --font-regular: 400;
-  Download-CV--font-semi-bold: 600;
+  download-cv--font-semi-bold: 600;
 
   /*========== z index ==========*/
   --z-tooltip: 10;
@@ -80,7 +80,7 @@ a {
   padding-top: 20px;
 }
 
-.work{
+.work {
   margin-top: 30px;
 }
 
@@ -126,12 +126,12 @@ a {
   font-weight: initial;
   font-size: 1.25rem;
 }
-.nav__logo img{
-    width: 40px;
-    height: 40px;
-    border-radius: 50px;
+.nav__logo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
   margin-right: 5px;
-  border: 1px solid #c6ea8d;
+  border: 2px solid #fec200;
 }
 
 .nav__toggle {
@@ -174,13 +174,13 @@ a {
   }
   .nav__list {
     margin-top: 15px;
-    text-align: left !important;direction: rtl;
+    text-align: left !important;
+    direction: rtl;
     background-color: var(--black-color);
   }
 }
 
 .nav__link {
-
   color: var(--white-color);
   /* background-color: var(--black-color); */
   font-weight: var(--font-semi-bold);
@@ -192,6 +192,26 @@ a {
   transition: 0.3s ease;
   position: relative;
 }
+.upwork_icon {
+  color: black;
+  font-weight: 600 !important;
+  width: 120px;
+  height: 50px;
+  border-radius: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease;
+  position: relative;
+  transform: translateY(35%);
+  margin: 0px !important;
+  font-size: 16px !important;
+  background-color: #f8cc4d;
+}
+.upwork_icon::before {
+  height: 0px;
+}
+
 .nav__link:hover {
 }
 .nav__link::before {
