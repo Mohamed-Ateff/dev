@@ -45,39 +45,6 @@ window.onload = () => {
   }
 };
 
-/*=============== EMAIL JS ===============*/
-
-const contactForm = document.getElementById("contact-form"),
-  contactMessage = document.getElementById("contact-message");
-
-const sendEmail = (e) => {
-  e.preventDefault();
-
-  emailjs
-    .sendForm(
-      "service_l93ejop",
-      "template_osh27jm",
-      "#contact-form",
-      "1GY65p7IUOQlmMSl_"
-    )
-    .then(
-      () => {
-        contactMessage.textContent = "Message sent successfully.";
-
-        setTimeout(() => {
-          contactMessage.textContent = "";
-        }, 5000);
-
-        contactForm.reset();
-      },
-      () => {
-        contactMessage.textContent = "Message not sent (service error).";
-      }
-    );
-};
-
-contactForm.addEventListener("submit", sendEmail);
-
 // const coords = { x: 0, y: 0 };
 // const circles = document.querySelectorAll(".circle");
 
