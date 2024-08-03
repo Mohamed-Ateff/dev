@@ -123,11 +123,14 @@ a {
   font-size: 1.25rem;
 }
 .nav__logo img {
-  width: 50px;
-  height: 50px;
+  width: 55px;
+  height: 55px;
   border-radius: 50px;
   margin-right: 5px;
   border: 2px solid #fec200;
+}
+.my_name {
+  font-weight: 600;
 }
 
 .nav__toggle {
@@ -523,7 +526,7 @@ a {
   font-weight: 800;
   font-size: clamp(3.4375rem, 3.25rem + 0.75vw, 4rem);
   position: relative;
-  color: #c4c5c7 !important;
+  color: white !important;
   z-index: 100 !important;
 }
 
@@ -560,10 +563,11 @@ a {
   transform: rotate(90deg);
 }
 
-.hire-me {
-  border: 2px solid #303236;
-  color: #4c4f56;
-  background-color: transparent;
+.Download-CV {
+  border: 2px solid #1f1f26;
+  background-color: #1f1f26;
+  color: white;
+
   font-weight: 600;
   background-size: 100%;
   padding: 14px 45px;
@@ -575,20 +579,21 @@ a {
   transition: 0.3s ease;
 }
 
-.hire-me svg {
+.Download-CV svg {
   width: 23px;
   height: 23px;
-  fill: #4c4f56;
-  margin-right: 5px;
+
+  fill: white;
+  margin-right: 10px;
   transition: 0.3s ease;
 }
-.hire-me:hover {
-  border: 2px solid #1f1f26;
-  background-color: #1f1f26;
-  color: white;
+.Download-CV:hover {
+  border: 2px solid #303236;
+  color: #4c4f56;
+  background-color: transparent;
 }
-.hire-me:hover svg {
-  fill: white;
+.Download-CV:hover svg {
+  fill: #4c4f56;
 }
 
 .hero-buttns {
@@ -655,7 +660,7 @@ a {
     overflow: hidden;
     height: 300px;
   }
-  .hire-me {
+  .Download-CV {
     margin-top: 15px;
     margin-left: 0px;
   }
@@ -702,7 +707,8 @@ a {
   margin-right: 15px;
   color: white;
   font-size: 60px;
-  font-weight: 200;
+  font-weight: 600;
+  font-style: italic;
 }
 .under-hero-left .under-hero-left-coulms p {
   color: rgb(239, 239, 239);
@@ -1606,6 +1612,80 @@ a {
 /* Contact */
 
 .contact {
+  margin-top: 30px;
+}
+
+.contact .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  min-height: 350px;
+  background-color: #f8cc4d;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.contact .container .contact_text h1 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  line-height: 1.5 !important;
+  color: #1f1f26;
+  position: relative;
+  z-index: 99;
+  transition: 0.3s ease;
+}
+
+.contact-button {
+  color: white;
+  padding: 20px 45px;
+  background-color: #1f1f26;
+  border-radius: 50px;
+  margin-top: 22px;
+}
+.contact-button i {
+  margin-left: 10px;
+}
+
+/* .contact .container .contact_text h1 svg {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -4%;
+  z-index: -99;
+  width: 150px;
+}
+
+.fill-primary {
+  fill: black;
+} */
+
+.contact .container p {
+  color: #1f1f26;
+  width: 40%;
+  line-height: 25px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .contact .container .contact_text h1 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.5 !important;
+    color: #1f1f26;
+    position: relative;
+    z-index: 99;
+    transition: 0.3s ease;
+  }
+  .contact .container p {
+    width: 100%;
+  }
+}
+
+/* 
+.contact {
   margin-top: 50px;
 }
 
@@ -1677,7 +1757,7 @@ a {
     align-items: center;
     margin-top: 20px;
   }
-}
+} */
 
 /* Contact Ends */
 
