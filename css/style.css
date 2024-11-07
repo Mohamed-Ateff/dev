@@ -1,4 +1,51 @@
-@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+.nunito-sans-<uniquifier > {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings: "wdth" 100, "YTLC" 500;
+}
+/* Ripple Effect */
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  pointer-events: none;
+  background: radial-gradient(
+    circle,
+    #F8CC4D,
+    transparent 100%
+  );
+  mix-blend-mode: screen;
+  animation: rippleEffect 0.6s ease-out forwards;
+}
+
+body,
+html {
+  overflow: visible;
+  position: relative;
+}
+
+/* Adjust z-index for ripple */
+.ripple {
+  z-index: 9999; /* Ensure it appears above other elements */
+  position: fixed; /* Use fixed position for consistent placement */
+}
+
+@keyframes rippleEffect {
+  0% {
+    transform: scale(0.5);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -107,8 +154,7 @@
   --black-color-lighten: hsla(0, 0%, 100%, 0.03);
   --white-color: hwb(0 100% 0% / 0.953);
   --body-color: #161618;
-
-  --body-font: "Instrument Sans", sans-serif;
+  --body-font: "Nunito Sans", sans-serif;
   --normal-font-size: 0.938rem;
 
   --font-regular: 400;
@@ -124,7 +170,7 @@
 }
 
 html {
-  font-family: "Instrument Sans", sans-serif !important;
+  font-family: "Nunito Sans", sans-serif !important;
   scroll-behavior: smooth;
 }
 
@@ -135,7 +181,7 @@ html {
 }
 
 body {
-  font-family: "Instrument Sans", sans-serif !important;
+  font-family: "Nunito Sans", sans-serif !important;
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   background-repeat: no-repeat;
@@ -867,8 +913,8 @@ a {
 .work-title p {
   color: #f8cc4d;
   font-weight: 700;
-  font-size: 14px;
-  letter-spacing: 1px;
+  font-size: 19px;
+  margin-bottom: 10px;
 }
 
 .work-title h1 {
@@ -883,6 +929,7 @@ a {
 .see-more-projects {
   width: 105px;
   min-height: 70px;
+  margin-right: 15px;
   display: flex;
   align-items: center;
   position: relative;
@@ -899,10 +946,11 @@ a {
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
-  color: white;
-  font-size: 15px !important;
-  background-color: #161618;
-  border: 1px solid #161618;
+  color: black;
+  font-size: 18px !important;
+  font-weight: 800;
+  background-color: #f8cc4d;
+  border: 1px solid #f8cc4d;
   width: 50px;
   height: 50px;
   border-radius: 50px;
@@ -1561,7 +1609,7 @@ a {
   font-size: 2.3rem;
   margin-bottom: 1.6rem !important;
   margin-top: 0;
-  font-family: "Instrument Sans", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-weight: 700;
   line-height: 1.25;
 }
@@ -1843,100 +1891,6 @@ a {
 } */
 
 /* Contact Ends */
-
-/* footer */
-
-footer {
-  margin-top: 50px;
-}
-footer .container {
-  padding: 60px 0px 40px 0px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  border-top: 1px solid #313235;
-  border-bottom: 1px solid #313235;
-}
-footer .container .con1 {
-  width: 250px;
-}
-footer .container .con1 h3 {
-  color: white;
-}
-footer .container .con1 .link_contact {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  margin-top: 23px;
-}
-footer .container .con1 .link_contact a {
-  font-weight: 600;
-  font-size: 16px;
-  color: rgb(186, 186, 186);
-  margin-bottom: 13px;
-  font-size: 15px;
-  width: fit-content;
-  transition: 0.3s ease;
-}
-footer .container .con1 .link_contact a:hover {
-  color: #f7c32e;
-}
-
-footer .container .con1 .link_contact a i {
-  color: #f7c32e;
-  margin-right: 5px;
-}
-
-footer .container .con2 {
-  width: 250px;
-  margin-left: 200px;
-}
-footer .container .con2 {
-  width: 250px;
-  margin-right: 60px;
-}
-footer .container .con2 h3 {
-  color: white;
-}
-footer .container .con2 .link_contact {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  margin-top: 23px;
-}
-footer .container .con2 .link_contact a {
-  font-weight: 600;
-  font-size: 16px;
-  color: black;
-  margin-bottom: 13px;
-  font-size: 15px;
-  transition: 0.3s ease;
-  background-color: #f7c32e;
-  padding: 12px 20px;
-  border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-@media only screen and (max-width: 600px) {
-  footer .container {
-    flex-direction: column;
-    border-top: 1px solid #313235;
-    border-bottom: 1px solid #313235;
-  }
-  footer .container .con1 {
-    width: 250px;
-    margin-bottom: 35px;
-  }
-  footer .container .con2 {
-    width: 250px;
-    margin-left: 0px;
-  }
-}
-
-/* footer ends */
 
 /* end */
 
